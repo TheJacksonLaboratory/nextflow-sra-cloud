@@ -1,4 +1,4 @@
-# Download SRA files in the Cloud
+## Download SRA files in the Cloud
 
 ## To run:
 
