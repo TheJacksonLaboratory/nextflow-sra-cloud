@@ -23,6 +23,8 @@ nextflow run sratools/main.nf -profile awsbatch -w results-aws
 ## Configuring SRAtoolkit
 You need to run `vdb-config --interactive` to configure the Sratoolkit. As it is not a good practice to commit credentials to github, dockerhub or any public repository, this example tries to bypass the interactive mode. The approach here is to run `vdb-config --interactive` once and use the `user-settings.mkfg` file generated in the ~/.ncbi directory (or /root/.ncbi directory). You need to provide the `user-setting.mkfg` in this nexflow example. You can store this file locally or in the cloud and provide the path with the `params.infile` variable.
 
+Follow these instructions to run `vdb-confg`: https://edwards.sdsu.edu/research/accessing-sra-in-the-cloud/ and generate the user-setting.mkfg file. 
+
 >> you should not share configuration files in GitHub or any public repositories.
 
 ## References
